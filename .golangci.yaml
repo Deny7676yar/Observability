@@ -7,8 +7,7 @@ run:
   issues-exit-code: 1
   # don't start tests
   tests: false
-  # Skip vendor folder and third_party dependencies
-  skip-dirs-use-default: true
+
 
 # output formatting
 output:
