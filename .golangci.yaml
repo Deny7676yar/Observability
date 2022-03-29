@@ -1,0 +1,110 @@
+# This file configures golagci-lint checker
+
+run:
+  # overal timeout
+  timeout: 1m
+  # exit on at least one error message
+  issues-exit-code: 1
+  # don't start tests
+  tests: false
+  # Skip vendor folder and third_party dependencies
+  skip-dirs-use-default: true
+
+# output formatting
+output:
+  # format
+  format: colored-line-number
+  # sort
+  sort-results: true
+
+# linters settings 
+linters-settings:
+
+  funlen:
+    lines: 100
+    statements: 40
+
+  goconst:
+    min-len: 3
+    min-occurrences: 3
+
+  misspell:
+    locale: US
+
+
+# list of enabled linters
+linters:
+  disable-all: true
+
+  enable:
+    - cyclop
+    - deadcode
+    - errcheck
+    - govet
+    - errorlint
+    - exportloopref
+    - funlen
+    - goconst
+    - gocritic
+    - godot
+    - gofmt
+    - goimports
+    - misspell
+    - nakedret
+    - structcheck
+    - unused
+    - whitespace
+# This file configures golagci-lint checker
+
+run:
+  # overal timeout
+  timeout: 1m
+  # exit on at least one error message
+  issues-exit-code: 1
+  # don't start tests
+  tests: false
+  # Skip vendor folder and third_party dependencies
+  skip-dirs-use-default: true
+
+# output formatting
+output:
+  # format
+  format: colored-line-number
+  # sort
+  sort-results: true
+
+# linters settings 
+linters-settings:
+
+  funlen:
+    lines: 100
+    statements: 40
+
+  goconst:
+    min-len: 3
+    min-occurrences: 3
+
+  misspell:
+    locale: US
+
+
+# list of enabled linters
+linters:
+  disable-all: true
+
+  enable:
+    - cyclop
+    - deadcode
+    - errcheck
+    - govet
+    - errorlint
+    - exportloopref
+    - funlen
+    - goconst
+    - gofmt
+    - goimports
+    - misspell
+    - nakedret
+    - structcheck
+    - unused
+    - whitespace
