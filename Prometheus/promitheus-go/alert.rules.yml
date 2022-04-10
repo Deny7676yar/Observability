@@ -1,0 +1,18 @@
+groups:
+- name: example
+  rules:
+
+  - alert: app_line_length_too_long
+    expr: metricsexample_last_line_length > 10
+    labels:
+      severity: page
+    annotations:
+      summary: "Received a line with length > 10"
+
+  - alert: go_routines
+    expr: avg(go_goroutines) > 10
+    for: 1m
+    labels:
+      severity: page
+    annotations:
+      summary: "Go Routines AVG greater than 10" 
